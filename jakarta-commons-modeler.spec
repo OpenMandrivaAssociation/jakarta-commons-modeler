@@ -6,7 +6,7 @@
 
 Name:           jakarta-%{short_name}
 Version:        2.0
-Release:        %mkrel 1.1
+Release:        %mkrel 1.2
 Epoch:          0
 Summary:        Jakarta Commons Modeler
 License:        Apache License
@@ -17,7 +17,7 @@ Source0:        http://www.apache.org/dist/jakarta/commons/modeler/source/common
 Url:            http://jakarta.apache.org/commons/%{base_name}/
 BuildRequires:  ant
 BuildRequires:  jaxp_parser_impl
-BuildRequires:  xml-commons-apis
+BuildRequires:  xml-commons-jaxp-1.3-apis
 BuildRequires:  jaxp_transform_impl
 # XXX: jmxri doesn't work because mx4j requires mx4j.util.Utils (mx4j-tools)
 BuildRequires:  mx4j
@@ -27,7 +27,7 @@ BuildRequires:  jakarta-commons-collections >= 0:2.0
 BuildRequires:  jakarta-commons-digester >= 0:1.2
 BuildRequires:  jakarta-commons-logging >= 0:1.0
 Requires:       jaxp_parser_impl
-Requires:       xml-commons-apis
+Requires:       xml-commons-jaxp-1.3-apis
 Requires:       jaxp_transform_impl
 Requires:       mx4j
 Requires:       jakarta-commons-beanutils >= 0:1.3
@@ -63,7 +63,7 @@ Javadoc for %{name}.
 %setup -q -n %{short_name}-%{version}-src
 
 %build
-export CLASSPATH=$(build-classpath xml-commons-apis jaxp_parser_impl jaxp_transform_impl mx4j junit commons-beanutils commons-collections commons-digester commons-logging junit)
+export CLASSPATH=$(build-classpath xml-commons-jaxp-1.3-apis jaxp_parser_impl jaxp_transform_impl mx4j junit commons-beanutils commons-collections commons-digester commons-logging junit)
 %{ant} dist
 %{ant} -Dbuild.sysclasspath=first test
 
