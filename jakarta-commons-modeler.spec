@@ -6,7 +6,7 @@
 
 Name:           jakarta-%{short_name}
 Version:        2.0
-Release:        %mkrel 1.3
+Release:        %mkrel 1.4
 Epoch:          0
 Summary:        Jakarta Commons Modeler
 License:        Apache License
@@ -15,6 +15,7 @@ Group:          Development/Java
 #Distribution:  JPackage
 Source0:        http://www.apache.org/dist/jakarta/commons/modeler/source/commons-modeler-2.0-src.tar.gz
 Url:            http://jakarta.apache.org/commons/%{base_name}/
+BuildRequires:  java-rpmbuild
 BuildRequires:  ant
 BuildRequires:  jaxp_parser_impl
 BuildRequires:  xml-commons-jaxp-1.3-apis
