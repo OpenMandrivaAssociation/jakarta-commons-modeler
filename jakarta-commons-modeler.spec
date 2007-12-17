@@ -43,7 +43,6 @@ BuildRequires:  java-devel
 %endif
 Provides:        %{short_name}
 Obsoletes:       %{short_name}
-BuildRoot:       %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The Modeler project shall create and maintain a set of Java
