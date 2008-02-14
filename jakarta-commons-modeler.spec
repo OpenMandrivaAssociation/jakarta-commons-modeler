@@ -11,6 +11,7 @@ Epoch:          0
 Summary:        Jakarta Commons Modeler
 License:        Apache License
 Group:          Development/Java
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 #Vendor:        JPackage Project
 #Distribution:  JPackage
 Source0:        http://www.apache.org/dist/jakarta/commons/modeler/source/commons-modeler-2.0-src.tar.gz
