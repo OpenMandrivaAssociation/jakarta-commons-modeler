@@ -6,7 +6,7 @@
 
 Name:           jakarta-%{short_name}
 Version:        2.0
-Release:        %mkrel 1.5
+Release:        %mkrel 1.5.1
 Epoch:          0
 Summary:        Jakarta Commons Modeler
 License:        Apache License
@@ -37,7 +37,7 @@ Requires:       jakarta-commons-collections >= 0:2.0
 Requires:       jakarta-commons-digester >= 0:1.2
 Requires:       jakarta-commons-logging >= 0:1.0
 %if %{gcj_support}
-BuildRequires:  java-gcj-compat
+BuildRequires:  java-gcj-compat-devel
 %else
 BuildArch:      noarch
 BuildRequires:  java-devel
