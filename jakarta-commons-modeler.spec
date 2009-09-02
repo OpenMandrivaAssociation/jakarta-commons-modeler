@@ -6,7 +6,7 @@
 
 Name:           jakarta-%{short_name}
 Version:        2.0
-Release:        %mkrel 1.5.2
+Release:        %mkrel 1.5.3
 Epoch:          0
 Summary:        Jakarta Commons Modeler
 License:        Apache License
