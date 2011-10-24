@@ -6,8 +6,7 @@
 
 Name:           jakarta-%{short_name}
 Version:        2.0
-Release:        %mkrel 1.5.6
-Epoch:          0
+Release:        1.5.6
 Summary:        Jakarta Commons Modeler
 License:        Apache License
 Group:          Development/Java
@@ -119,5 +118,4 @@ fi
 %dir %{_javadocdir}/%{name}-%{version}
 %{_javadocdir}/%{name}-%{version}/*
 %ghost %dir %{_javadocdir}/%{name}
-
 
