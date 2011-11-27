@@ -6,7 +6,7 @@
 
 Name:           jakarta-%{short_name}
 Version:        2.0
-Release:        1.5.6
+Release:        1.5.8
 Summary:        Jakarta Commons Modeler
 License:        Apache License
 Group:          Development/Java
