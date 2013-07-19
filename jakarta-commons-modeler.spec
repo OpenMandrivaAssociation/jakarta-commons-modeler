@@ -6,12 +6,12 @@
 
 Summary:	Jakarta Commons Modeler
 Name:		jakarta-%{short_name}
-Version:	2.0
-Release:	2
+Version:	2.0.1
+Release:	1
 License:	Apache License
 Group:		Development/Java
 Url:		http://jakarta.apache.org/commons/%{base_name}/
-Source0:	http://www.apache.org/dist/jakarta/commons/modeler/source/commons-modeler-2.0-src.tar.gz
+Source0:	http://www.apache.org/dist/jakarta/commons/modeler/source/commons-modeler-2.0.1-src.tar.gz
 %if !%{gcj_support}
 BuildArch:	noarch
 BuildRequires:	java-devel
@@ -106,4 +106,5 @@ fi
 %dir %{_javadocdir}/%{name}-%{version}
 %{_javadocdir}/%{name}-%{version}/*
 %ghost %dir %{_javadocdir}/%{name}
+
 
