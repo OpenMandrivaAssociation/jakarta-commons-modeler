@@ -10,7 +10,7 @@ Version:	2.0
 Release:	2
 License:	Apache License
 Group:		Development/Java
-Url:		http://jakarta.apache.org/commons/%{base_name}/
+Url:		https://jakarta.apache.org/commons/%{base_name}/
 Source0:	http://www.apache.org/dist/jakarta/commons/modeler/source/commons-modeler-2.0-src.tar.gz
 %if !%{gcj_support}
 BuildArch:	noarch
